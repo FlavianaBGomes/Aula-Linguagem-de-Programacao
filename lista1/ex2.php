@@ -11,16 +11,16 @@
     <form method="post" action="ex2resposta.php">
 
                         <div class="mb-3">
-                            <label for="" class="form-label">Valor 1</label>
+                            <label for="valor1" class="form-label">Valor 1</label>
                             <input type="text" id="valor1" name="valor1" class="form-control">
                         </div>
 
                         <div class="mb-3">
-                            <label for="" class="form-label">Valor 2</label>
+                            <label for="valor2" class="form-label">Valor 2</label>
                             <input type="text" id="valor2" name="valor2" class="form-control">
                         </div>
 
-                    
+                
                     <button type="submit" class="btn btn-primary">Enviar</button>
                 </form>
             
