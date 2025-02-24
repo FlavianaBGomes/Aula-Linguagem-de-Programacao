@@ -3,21 +3,22 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Resposta do Exercício 7</title>
+    <title>Resposta do Exercício 8</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
   <body>
-    <h1>Resposta do exercício 7</h1>
+    <h1>Resposta do exercício 8</h1>
     <?php
         if ($_SERVER['REQUEST_METHOD'] == 'POST') { 
             try {
-            $fahrenheit = $_POST["fahrenheit"];
-            $celsius = ($fahrenheit - 32) * 5/9;
-            echo "O valor da temperatura em Celsius é: $celsius";
+            $largura = $_POST["largura"];
+            $altura= $_POST["altura"];
+            $perimetro = 2 * ($largura + $altura);
+            echo "O perímetro do retângulo é: $perimetro unidades.";
 
-        } catch (Exception $e) {
+      } catch (Exception $e) {
             echo "Erro: " . $e->getMessage();
-        }
+      }
     }
         ?>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
