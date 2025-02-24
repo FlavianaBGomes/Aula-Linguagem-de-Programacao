@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Resposta do Exercício 8</title>
+    <title>Resposta do Exercício 2</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
   <body>
@@ -11,10 +11,9 @@
     <?php
         if ($_SERVER['REQUEST_METHOD'] == 'POST') { 
             try {
-            $largura = $_POST["largura"];
-            $altura= $_POST["altura"];
-            $area = $altura * $largura;
-            echo "A área do retângulo é: $area unidades quadradas.";
+            $raio = $_POST["raio"];
+            $area = pi() * pow($raio, 2);
+            echo "A área do circulo é: $area";
 
       } catch (Exception $e) {
             echo "Erro: " . $e->getMessage();
