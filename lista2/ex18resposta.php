@@ -3,28 +3,29 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Resposta do Exercício 17</title>
+    <title>Resposta do Cálculo de Juros Compostos</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
   <body>
-      <h1>Resposta do Exercício 17 - Juros Simples</h1>
+    <div class="container">
+      <h1 class="mt-5">Resultado do Cálculo de Juros Compostos</h1>
       <?php
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             try {
-
                 $capital = $_POST["capital"];
                 $taxa = $_POST["taxa"];
                 $periodo = $_POST["periodo"];
 
-                $juros = $capital * $taxa * $periodo / 100;
+                $montante = $capital * pow((1 + $taxa / 100), $periodo);
 
-                // Exibe o resultado
-                echo "O valor dos juros simples é: R$  $juros";
+                echo "O montante com juros compostos é: R$ $montante";
             } catch (Exception $e) {
                 echo "Erro: " . $e->getMessage();
             }
         }
       ?>
+    </div>
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
