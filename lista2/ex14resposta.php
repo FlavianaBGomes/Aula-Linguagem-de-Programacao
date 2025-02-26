@@ -14,7 +14,6 @@
                 $quilometros = $_POST["quilometros"];
                 $milhas = $quilometros * 0.621371;
                 
-
                 echo "Resultado: $quilometros quilômetros é igual a $milhas milhas.";
             } catch (Exception $e) {
                 echo "Erro: " . $e->getMessage();

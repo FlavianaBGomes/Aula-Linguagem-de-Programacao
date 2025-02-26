@@ -14,10 +14,8 @@
             $peso = $_POST["peso"];
             $altura = $_POST["altura"];
 
-            // Calcula o IMC
             $imc = $peso / pow($altura, 2);
 
-            // Exibe o resultado
             echo "Seu IMC é: " . $imc;  
 
         } catch (Exception $e) {
