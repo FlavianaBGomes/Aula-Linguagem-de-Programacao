@@ -3,20 +3,19 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Resposta do Exercício 12</title>
+    <title>Resposta do Exercício 14</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
   <body>
-    <h1>Resposta do exercício 12</h1>
+    <h1>Resposta do Exercício 14</h1>
     <?php
         if ($_SERVER['REQUEST_METHOD'] == 'POST') { 
             try {
-                $base = $_POST["base"];
-                $expoente = $_POST["expoente"];
+                $quilometros = $_POST["quilometros"];
+                $milhas = $quilometros * 0.621371;
                 
-                $resultado = pow($base, $expoente);
-                
-                echo "Resultado: $base elevado a $expoente é: $resultado";
+
+                echo "Resultado: $quilometros quilômetros é igual a $milhas milhas.";
             } catch (Exception $e) {
                 echo "Erro: " . $e->getMessage();
             }
