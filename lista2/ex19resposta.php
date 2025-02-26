@@ -3,21 +3,21 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Resposta do Cálculo de Juros Compostos</title>
+    <title>Resultado da Conversão</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
   <body>
-      <h1>Resultado do Cálculo de Juros Compostos</h1>
+      <h1>Resultado da Conversão</h1>
       <?php
         if ($_SERVER['REQUEST_METHOD'] == 'POST') {
             try {
-                $capital = $_POST["capital"];
-                $taxa = $_POST["taxa"];
-                $periodo = $_POST["periodo"];
+                $dias = $_POST["dias"];
 
-                $montante = $capital * pow((1 + $taxa / 100), $periodo);
+                $horas = $dias * 24;
+                $minutos = $horas * 60;
+                $segundos = $minutos * 60;
 
-                echo "O montante com juros compostos é: R$ $montante";
+                echo "Em $dias dias, temos: $horas horas, $minutos minutos, $segundos segundos";
             } catch (Exception $e) {
                 echo "Erro: " . $e->getMessage();
             }
