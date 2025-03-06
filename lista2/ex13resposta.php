@@ -13,8 +13,7 @@
             try {
                 $metros = $_POST["metros"];
                 $centimetros = $metros * 100;
-                
-                // Exibe o resultado
+              
                 echo "Resultado: $metros metros é igual a $centimetros centímetros.";
             } catch (Exception $e) {
                 echo "Erro: " . $e->getMessage();
