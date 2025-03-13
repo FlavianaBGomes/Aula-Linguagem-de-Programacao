@@ -1,6 +1,8 @@
-<body> 
-    <form action="" method="POST">
-        <?php for ($i=0)
-
-
-<?php
+<?php 
+    if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+        try {
+          $a = array();
+          $nome = $_POST['nome'];
+          
+        }
+    }
