@@ -12,15 +12,15 @@
 
      <form method="post" action="ex4resposta.php" class="border w-50 p-3">  
       <div class="mb-3">
-          <label for="num1" class="form-label">Informar dia</label>
+          <label for="num1" class="form-label">Informe o dia</label>
           <input type="number" id="num1" name="num1" class="form-control" required="">
       </div>
       <div class="mb-3">
-          <label for="num2" class="form-label">Informar mês</label>
+          <label for="num2" class="form-label">Informe o mês</label>
           <input type="number" id="num2" name="num2" class="form-control" required="">
       </div>
       <div class="mb-3">
-          <label for="num3" class="form-label">Informar ano</label>
+          <label for="num3" class="form-label">Informe o ano</label>
           <input type="number" id="num3" name="num3" class="form-control" required="">
       </div>
 
