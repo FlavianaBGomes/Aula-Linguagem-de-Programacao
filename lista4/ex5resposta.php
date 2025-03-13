@@ -1,5 +1,5 @@
 <?php
-  declare(strict_types=1); 
+  declare(strict_types=1); //obriga que as variáveis sejam tipadas
 ?>
 <!doctype html>
 <html lang="en">
@@ -13,25 +13,21 @@
     <h1>Reposta do Exercicio 02</h1>
     <div class="border w-50 p-3">
 
-      <?php 
-        function toUpperAndLower(string $palavra): void {
-          echo "to lower: ". strtolower($palavra);
-          
-          echo "TO UPPER: ". strtoupper($palavra);
-        }
+    <?php
+                function raizQuadrada($valor): void {
+                    echo"A raiz quadrada é: ".sqrt($valor);
+                }
+                if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+                    try {
+                       $valor1 = floatval($_POST['valor1']);
+                       raizQuad($valor1);
+                            
+                    } catch (Exception $e) {
 
-        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-          try {
-            $palavra = $_POST['palavra'];
-            toUpperAndLower($palavra);
-
-          } catch(Exception $e){
-              echo $e->getMessage();
-          }
-        } 
-        
-
-      ?>
+                        echo "Erro : $e->getMessage()";
+                    }
+                }
+                ?>
     </div>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
