@@ -8,12 +8,16 @@
   </head>
   <body class="d-flex flex-column justify-content-center align-items-center vh-100">
       
-      <h1>Exercicio 01</h1>
+      <h1>Exercicio 03</h1>
 
-     <form method="post" action="ex1resposta.php" class="border w-50 p-3">  
+     <form method="post" action="ex3resposta.php" class="border w-50 p-3">  
       <div class="mb-3">
-          <label for="palavra" class="form-label">Digite a palavra: </label>
-          <input type="text" id="palavra" name="palavra" class="form-control" required="">
+          <label for="palavra1" class="form-label">Informe a primeira palavra: </label>
+          <input type="text" id="palavra1" name="palavra1" class="form-control" required="">
+      </div>
+      <div class="mb-3">
+          <label for="palavra2" class="form-label">Informe a segunda palavra: </label>
+          <input type="text" id="palavra2" name="palavra2" class="form-control" required="">
       </div>
 
       <button type="submit" class="btn btn-primary">Enviar</button>

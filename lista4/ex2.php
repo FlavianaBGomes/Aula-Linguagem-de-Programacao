@@ -10,7 +10,7 @@
       
       <h1>Exercicio 02</h1>
 
-     <form method="post" action="exer02resposta.php" class="border w-50 p-3">  
+     <form method="post" action="ex2resposta.php" class="border w-50 p-3">  
       <div class="mb-3">
           <label for="palavra" class="form-label">Digite a palavra: </label>
           <input type="text" id="palavra" name="palavra" class="form-control" required="">
