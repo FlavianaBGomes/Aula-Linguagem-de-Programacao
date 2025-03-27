@@ -15,6 +15,7 @@
                 $email = $_POST['email'];
                 $senha = $_POST['senha'];
                 if (($email == "adm@adm.com") && ($senha == "123")){
+                    session_start();
                     $_SESSION['usuario'] = $email;
                     $_SESSION['acesso'] = true;
                     header('location: principal.php'); 
