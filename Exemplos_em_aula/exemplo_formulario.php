@@ -8,7 +8,7 @@
   </head>
   <body>
     <h1>
-        <form method="post" action="resposta.php">
+        <form method="post" action="resposta_formulario.php">
                         
                         <div class="mb-3">
                             <label for="valor1" class="form-label">valor 1</label>
