@@ -15,9 +15,13 @@
             try{
                 $email = $_POST['email'];
                 $senha = $_POST['senha'];
-                if (($email == "adm@adm.com") && ($senha == "123")){
+                $stmt = $pdo->prepare('SELECT * FROM usuarios where email = ?');
+                $usuario = $pdo->execute([$email], PDO::FETCH_ASSOC);
+                $usuario = $pdo->fetch(PDO::FETCH_ASSOC);
+
+                if ($usuario && password_verify($senha, $usuario['senha'])){ //aqui no banco, usuario na posição senha
                     session_start();
-                    $_SESSION['usuario'] = $email;
+                    $_SESSION['usuario'] = $usuario['nome'];
                     $_SESSION['acesso'] = true;
                     header('location: principal.php'); 
                 } else {
@@ -59,6 +63,11 @@
         <div class="row">
             <div class="col">
                 <button type="submit" class="btn btn-primary mt-3">Acessar</button>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col">
+                Não possui acesso? Clique <a href="novo_usuario.php">aqui</a>
             </div>
         </div>
     </form>
