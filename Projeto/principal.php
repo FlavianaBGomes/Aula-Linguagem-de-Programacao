@@ -1,4 +1,5 @@
 <?php
+<<<<<<< HEAD
   session_start();
   if(!$_SESSION['acesso']){
     header("location: index.php?mensagem=acesso_negado");
@@ -61,3 +62,14 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
+=======
+      require_once("cabecalho.php"); //outra função parecida é o require
+      //require_once vai verificar se aquele conteúdo já foi incluído
+      //include
+        echo "<h2> Usuário: ".$_SESSION['usuario']." </h2>";
+?>
+      <p><a href="sair.php">Sair</a></p>
+<?php
+require_once("rodape.php");
+?>
+>>>>>>> 4b77c1846927daeed172ef7e45383489b9c3f255
