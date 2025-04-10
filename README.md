@@ -10,13 +10,7 @@
 
 ## 🧩 Lista 1 – Treinando Bootstrap
 
-Exercícios feitos em HTML utilizando o framework Bootstrap para desenvolver componentes visuais, como:
-- Cards
-- Grids
-- Botões estilizados
-- Formulários responsivos
-- Alinhamento com flexbox e containers
-- Navbar e Footer
+Exercícios feitos em HTML utilizando o framework Bootstrap para desenvolver componentes visuais de formulários responsivos.
 
 ## 📝 Lista 2 – Fundamentos do PHP
 
