@@ -102,4 +102,5 @@ Exercícios feitos em HTML utilizando o framework Bootstrap para desenvolver com
 
 Feito com amor❤️ por Flaviana Bataliotti – FATEC Presidente Prudente /2025
 📅 Projeto acadêmico | 💡 Foco em aprendizado e prática com PHP
+
 "O correr da vida embrulha tudo, a vida é assim: esquenta e esfria, aperta e daí afrouxa, sossega e depois desinquieta. O que ela quer da gente é coragem" - Guimarães Rosa (Grande Sertão Veredas)
